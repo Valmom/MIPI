@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "369414259191",
+    "project_id": "mipi-notifications-750d0",
+    "storage_bucket": "mipi-notifications-750d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369414259191:android:4d6eb28490bdbe6cb06ef2",
+        "android_client_info": {
+          "package_name": "com.valmont1976.mipi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC87Pv5iwa_-ULVX2pPELAO0bHRGq95Wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
