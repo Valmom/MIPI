@@ -2,10 +2,22 @@
   "expo": {
     "name": "mipi",
     "slug": "mipi",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      "@react-native-firebase/app",
+      [         
+         "expo-notifications",
+         {
+             "icon": "./assets/notification-icon.png",
+             "color": "#ffffff",
+             "sound": true,
+             "priority": "high"             
+         }
+      ]
+    ],    
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -15,16 +27,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.valmont1976.mipi"      
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyDC87Pv5iwa_-ULVX2pPELAO0bHRGq95Wg"
+        }
+      },      
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.valmont1976.mipi"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f4ae273a-5975-4d31-9815-bd0371d318c2"        
+      }
     }
   }
 }
